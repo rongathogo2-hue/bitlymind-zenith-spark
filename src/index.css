@@ -8,50 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Light mode (secondary) */
+    /* Light mode - black and white theme */
     --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --foreground: 0 0% 0%;
     
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 0%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover-foreground: 0 0% 0%;
     
-    --primary: 240 85% 60%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
     
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
     
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
     
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 0%;
     
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 85% 60%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 0%;
     
-    /* Tech-focused colors */
-    --tech-primary: 240 85% 60%;
-    --tech-secondary: 260 85% 65%;
-    --tech-accent: 200 85% 60%;
-    --tech-glow: 240 100% 70%;
+    /* Minimal accent colors for hover and demo button */
+    --tech-primary: 0 0% 20%;
+    --tech-secondary: 0 0% 15%;
+    --tech-accent: 240 85% 60%;
+    --tech-glow: 240 85% 60%;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(240 85% 60%) 0%, hsl(260 85% 65%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(240 85% 60%) 0%, hsl(260 85% 65%) 50%, hsl(200 85% 60%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(240 4.8% 95.9%) 100%);
+    /* Gradients - mostly grayscale */
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 0%) 0%, hsl(0 0% 20%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 50%, hsl(0 0% 96%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
     
     /* Shadows */
     --shadow-glow: 0 0 40px hsl(240 85% 60% / 0.3);
-    --shadow-card: 0 10px 30px -10px hsl(240 10% 3.9% / 0.1);
-    --shadow-floating: 0 20px 60px -10px hsl(240 85% 60% / 0.2);
+    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.1);
+    --shadow-floating: 0 20px 60px -10px hsl(0 0% 0% / 0.15);
 
     --radius: 0.5rem;
 
@@ -73,58 +73,60 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark mode - primary theme */
-    --background: 240 10% 4%;
-    --foreground: 0 0% 98%;
+    /* Dark mode - black and white theme */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
     
-    --card: 240 10% 6%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
     
-    --popover: 240 10% 6%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
     
-    --primary: 240 85% 60%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
     
-    --secondary: 240 10% 12%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
     
-    --muted: 240 10% 12%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 65%;
     
-    --accent: 240 10% 12%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 0 0% 10%;
+    --accent-foreground: 0 0% 100%;
     
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
     
-    --border: 240 10% 12%;
-    --input: 240 10% 12%;
-    --ring: 240 85% 60%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 100%;
     
-    /* Tech-focused colors for dark mode */
-    --tech-primary: 240 85% 60%;
-    --tech-secondary: 260 85% 65%;
-    --tech-accent: 200 85% 60%;
-    --tech-glow: 240 100% 70%;
+    /* Minimal accent colors for hover and demo button */
+    --tech-primary: 0 0% 80%;
+    --tech-secondary: 0 0% 85%;
+    --tech-accent: 240 85% 60%;
+    --tech-glow: 240 85% 60%;
     
-    /* Dark mode gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(240 85% 60%) 0%, hsl(260 85% 65%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(240 10% 4%) 0%, hsl(240 10% 8%) 50%, hsl(240 10% 6%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(240 10% 6%) 0%, hsl(240 10% 8%) 100%);
+    /* Dark mode gradients - grayscale */
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 80%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 0%) 0%, hsl(0 0% 5%) 50%, hsl(0 0% 3%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 5%) 0%, hsl(0 0% 8%) 100%);
     
     /* Dark mode shadows */
     --shadow-glow: 0 0 40px hsl(240 85% 60% / 0.4);
-    --shadow-card: 0 10px 30px -10px hsl(240 10% 0% / 0.5);
-    --shadow-floating: 0 20px 60px -10px hsl(240 85% 60% / 0.3);
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
+    --shadow-floating: 0 20px 60px -10px hsl(0 0% 0% / 0.3);
+    
+    /* Sidebar colors */
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 240 85% 60%;
   }
 }
 

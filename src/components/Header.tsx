@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -8,6 +9,7 @@ import { navigationData } from "@/data/navigation";
 export const Header = () => {
   const [isDark, setIsDark] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Set dark mode by default
@@ -40,12 +42,12 @@ export const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">B</span>
             </div>
             <span className="text-xl font-bold">Bitly Mind Tech</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
@@ -60,7 +62,7 @@ export const Header = () => {
                     <DropdownMenuItem
                       key={dropdownItem.title}
                       className="flex flex-col items-start p-4 hover:bg-accent/50 cursor-pointer"
-                      onClick={() => scrollToSection(dropdownItem.href)}
+                      onClick={() => navigate(dropdownItem.href)}
                     >
                       <div className="font-medium text-card-foreground">{dropdownItem.title}</div>
                       <div className="text-sm text-muted-foreground">{dropdownItem.description}</div>
@@ -84,7 +86,7 @@ export const Header = () => {
             
             <Button 
               className="hidden sm:flex bg-gradient-primary hover:shadow-glow transition-all duration-300"
-              onClick={() => scrollToSection('#book-demo')}
+              onClick={() => navigate('/contact')}
             >
               Book a Demo
             </Button>
@@ -106,7 +108,7 @@ export const Header = () => {
                           <button
                             key={dropdownItem.title}
                             className="block text-left w-full p-2 text-muted-foreground hover:text-card-foreground transition-colors"
-                            onClick={() => scrollToSection(dropdownItem.href)}
+                            onClick={() => navigate(dropdownItem.href)}
                           >
                             {dropdownItem.title}
                           </button>
@@ -117,7 +119,7 @@ export const Header = () => {
                   <div className="pt-6 border-t border-border">
                     <Button 
                       className="w-full bg-gradient-primary"
-                      onClick={() => scrollToSection('#book-demo')}
+                      onClick={() => navigate('/contact')}
                     >
                       Book a Demo
                     </Button>
