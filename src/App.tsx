@@ -14,6 +14,16 @@ import About from "./pages/About";
 import CareersPage from "./pages/CareersPage";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Transformation from "./pages/Transformation";
+import Fintech from "./pages/Fintech";
+import Health from "./pages/Health";
+import Eccomerce from "./pages/Eccomerce";
+import Saas from "./pages/Saas";
+import Team from "./pages/Team";
+import Case from "./pages/Case";
+import Blog from "./pages/Blog";
+import Docs from "./pages/Docs";
+import Support from "./pages/Support";
 
 const queryClient = new QueryClient();
 
@@ -35,25 +45,25 @@ const App = () => (
           {/* Solutions Routes */}
           <Route path="/enterprise" element={<Enterprise />} />
           <Route path="/mvp" element={<MVP />} />
-          <Route path="/transformation" element={<Enterprise />} />
+          <Route path="/transformation" element={<Transformation />} />
           <Route path="/consulting" element={<Contact />} />
           
           {/* Industries Routes */}
-          <Route path="/fintech" element={<Enterprise />} />
-          <Route path="/healthcare" element={<Enterprise />} />
-          <Route path="/ecommerce" element={<Enterprise />} />
-          <Route path="/saas" element={<Enterprise />} />
+          <Route path="/fintech" element={<Fintech />} />
+          <Route path="/healthcare" element={<Health />} />
+          <Route path="/ecommerce" element={<Eccomerce />} />
+          <Route path="/saas" element={<Saas />} />
           
           {/* Company Routes */}
           <Route path="/about" element={<About />} />
-          <Route path="/team" element={<About />} />
+          <Route path="/team" element={<Team />} />
           <Route path="/careers" element={<CareersPage />} />
-          <Route path="/case-studies" element={<About />} />
+          <Route path="/case-studies" element={<Case />} />
           
           {/* Resources Routes */}
-          <Route path="/blog" element={<About />} />
-          <Route path="/docs" element={<About />} />
-          <Route path="/support" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/docs" element={<Docs />} />
+          <Route path="/support" element={<Support />} />
           <Route path="/contact" element={<Contact />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

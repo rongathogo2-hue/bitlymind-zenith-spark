@@ -46,7 +46,7 @@ export const Header = () => {
             <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">B</span>
             </div>
-            <span className="text-xl font-bold">Bitly Mind Tech</span>
+            <span className="text-xl font-bold">Bitly Mind Systems</span>
           </Link>
 
           {/* Desktop Navigation */}
